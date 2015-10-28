@@ -31,6 +31,13 @@ so we can ignore the csslint warning.
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.pure-form input[type="radio"],
+.pure-form input[type="checkbox"] {
+    margin-top: 0;
 }
 
 /*
@@ -228,6 +235,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     width: 10em;
     margin: 0 1em 0 0;
 }
+.pure-form-aligned .pure-control-group .item-list-label {
+    vertical-align: top;
+}
 .pure-form-aligned .pure-controls {
     margin: 1.5em 0 0 11em;
 }
@@ -313,4 +323,56 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     display: block;
     color: #666;
     font-size: 0.875em;
+}
+
+/* Append and prepend */
+.pure-form .pure-input-append,
+.pure-form .pure-input-prepend {
+    display: inline-block;
+}
+
+.pure-form .pure-input-prepend .add-on {
+    margin-right: -6px;
+    border-radius: 4px 0 0 4px;
+}
+
+.pure-form .pure-input-append .add-on {
+    margin-left: -6px;
+    border-radius: 0 4px 4px 0;
+}
+.pure-form .pure-input-prepend .add-on,
+.pure-form .pure-input-append .add-on {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: auto;
+    padding: 0.52em 0.9em;
+    text-align: center;
+    vertical-align: top;
+    line-height: normal;
+}
+
+.pure-form .pure-input-append input {
+    border-radius: 4px 0 0 4px;
+}
+
+.pure-form .pure-input-prepend input {
+    border-radius: 0 4px 4px 0;
+}
+
+.pure-form .pure-control-group .pure-controls {
+    margin: 0;
+    display: inline-block;
+}
+
+.pure-form-aligned .pure-control-group .pure-label-top-aligned {
+    vertical-align: top;
+}
+
+.pure-form-aligned .pure-controls .pure-checkbox ,
+.pure-form-aligned .pure-controls .pure-radio {
+    margin-bottom: 0.5em;
+    text-align: left;
+    display: block;
+    width: auto;
 }

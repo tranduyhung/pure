@@ -223,12 +223,12 @@ grunt.initConfig({
     // -- CSS Selectors Config -------------------------------------------------
 
     css_selectors: {
-        base: {
-            src : 'build/base.css',
-            dest: 'build/base-context.css',
+        cmdonation: {
+            src : 'build/pure.css',
+            dest: 'build/pure.css',
 
             options: {
-                mutations: [{prefix: '.pure'}]
+                mutations: [{prefix: '.cmdonation'}]
             }
         }
     },
@@ -274,7 +274,7 @@ grunt.registerTask('build', [
     'stripmq',
     'concat:build',
     'clean:build_res',
-    'css_selectors:base',
+    'css_selectors:cmdonation',
     'cssmin',
     'license'
 ]);

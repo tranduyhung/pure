@@ -20,7 +20,7 @@
     .pure-form input[type="color"],
     .pure-form label {
         margin-bottom: 0.3em;
-        display: block;
+        display: inline-block;
     }
 
     .pure-group input:not([type]),

@@ -26,3 +26,46 @@
     height: auto;
     display: block;
 }
+
+.pure-float-left {
+    float: left;
+}
+
+.pure-float-right {
+    float: right;
+}
+
+.pure-text-left {
+    text-align: left;
+}
+
+.pure-text-right {
+    text-align: right;
+}
+
+.pure-text-center {
+    text-align: center;
+}
+
+.pure-clearfix:before,
+.pure-clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+
+.pure-clearfix:after {
+    clear: both;
+}
+
+.pure-text-success {
+    color: rgb(28, 184, 65);
+}
+
+.pure-text-error {
+    color: rgb(202, 60, 60);
+}
+
+.pure-text-warning {
+    color: rgb(223, 117, 20);
+}
